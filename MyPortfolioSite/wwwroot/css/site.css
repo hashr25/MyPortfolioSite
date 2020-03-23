@@ -15,13 +15,129 @@ body {
     padding-bottom: 20px;
 }
 
-html, body{
+html, body {
     height: 100%;
-}
-
-.navbar, footer {
     background-color: #222629;
     color: white;
+}
+
+footer {
+    background-color: #474B4F;
+    color: white;
+}
+
+/*Navbar Section*/
+.navbar-default {
+    background-color: #474b4f;
+    border-color: #222629;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #474b4f;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+    background-color: #222629;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #222629;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #222629;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-link {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-link:hover {
+    color: #fe621d;
+    background-color: #222629;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #fe621d;
+        }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fe621d;
+        background-color: #222629;
+    }
 }
 
 /* Wrapping element */
@@ -30,17 +146,28 @@ html, body{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #222629;
 }
 
-.body-content-wrapper{
+.body-content-wrapper {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -40px;
-    padding: 0 0 40px;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+    background-color: #222629;
 }
 
-.footer{
-    height: 40px;
+a {
+    color: #FE621D;
+}
+
+a:hover {
+    color: #A23F13;
+}
+
+/* Footer Styling */
+.footer {
+    height: 60px;
     width: 100%;
 }
 
@@ -48,13 +175,69 @@ footer {
     height: 100%;
     width: 100%;
     vertical-align: middle;
+    text-align: center;
 }
 
 footer p {
-    text-align: center;
-    padding: 10px 0;
+    float: left;
     vertical-align: middle;
     color: white;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+/* Social Footer Icons */
+.social_icons_rounded ul {
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+    padding-right: 15px;
+    vertical-align: middle;
+    /*margin-top: 200px;
+    margin-left: 500px;*/
+}
+
+.social_icons_rounded ul li a {
+    float: right;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #e0e0e0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.social_icons_rounded ul li a i {
+    font-size: 16px;
+}
+
+.f_facebook:hover {
+    color: #fff;
+    background: #2a66b3;
+    border: 1px solid #2a66b3;
+}
+
+.t_twitter:hover {
+    color: #fff;
+    background: #35bbec;
+    border: 1px solid #35bbec;
+}
+
+.linkedin:hover {
+    color: #fff;
+    background: #007bb5;
+    border: 1px solid #007bb5;
+}
+
+.skype:hover {
+    color: #fff;
+    background: #01aaf8;
+    border: 1px solid #01aaf8;
+}
+
+.gap {
+    margin-left: 15px;
 }
 
 /* Carousel */

@@ -29,6 +29,14 @@ namespace MyPortfolioSite.Controllers
             return View();
         }
 
+        public IActionResult FatCatSplat()
+        {
+            ViewData["Message"] = "This is Fat Cat Splat.";
+            ViewData["Instructions"] = "Click the buttons to navigate through the UI. Use your Space Bar to jump!";
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
