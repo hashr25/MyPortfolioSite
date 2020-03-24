@@ -162,6 +162,25 @@ a:hover {
     color: #A23F13;
 }
 
+.btn-default {
+    background-color: #FE621D;
+    color: #222629;
+    transition: all 0.3s ease;
+    border: inset 2px #222629;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: #A23F13;
+    border: groove 3px #474B4F;
+}
+
+.btn-default:active {
+    color: white;
+    background-color: #A23F13;
+    border: groove 3px #474B4F;
+}
+
 /* Footer Styling */
 .footer {
     height: 40px;
