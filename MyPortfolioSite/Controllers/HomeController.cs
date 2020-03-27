@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyPortfolioSite.Models;
+using System.Web;
 
 namespace MyPortfolioSite.Controllers
 {
@@ -17,14 +18,14 @@ namespace MyPortfolioSite.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "All about me!";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Contact me with any requests for bug reports, feature requests, or freelancing inquiries.";
 
             return View();
         }
@@ -33,6 +34,7 @@ namespace MyPortfolioSite.Controllers
         {
             ViewData["Message"] = "This is Fat Cat Splat.";
             ViewData["Instructions"] = "Click the buttons to navigate through the UI. Use your Space Bar to jump!";
+            
 
             return View();
         }

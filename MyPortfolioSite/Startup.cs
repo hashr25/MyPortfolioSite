@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -58,6 +59,14 @@ namespace MyPortfolioSite
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseFileServer();
+            StaticFileOptions option = new StaticFileOptions();
+            FileExtensionContentTypeProvider contentTypeProvider = (FileExtensionContentTypeProvider)option.ContentTypeProvider ??
+            new FileExtensionContentTypeProvider();
+            contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
+            option.ContentTypeProvider = contentTypeProvider;
+            app.UseStaticFiles(option);
         }
     }
 }

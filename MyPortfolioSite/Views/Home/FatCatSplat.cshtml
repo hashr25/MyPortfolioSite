@@ -3,7 +3,26 @@
     ViewData["Title"] = "Fat Cat Splat";
 }
 
+<link rel="stylesheet" href="~/webgl/TemplateData/style.css">
+<script src="~/webgl/Build/UnityLoader.js"></script>
+<script src="~/webgl/TemplateData/UnityProgress.js"></script>
+<script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "../webgl/Build/WebBuild.json", { onProgress: UnityProgress });
+</script>
+
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 <p>@ViewData["Instructions"]</p>
 
+<div class="bubble-container">
+    <div class="webgl-content">
+        <div id="unityContainer"></div>
+        <div class="webgl-footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="title">Fat Cat Splat</div>
+        </div>
+    </div>
+</div>
+
+<script></script>
