@@ -18,6 +18,28 @@
         <link rel="stylesheet" href="~/css/site.css" />
         <link rel="stylesheet" href="~/webgl/TemplateData/style.css" />
     </environment>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1758988774396153');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1758988774396153&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -74,6 +96,16 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="https://kit.fontawesome.com/433de5932a.js" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6B30R8M95"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-V6B30R8M95');
+        </script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -90,6 +122,16 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
         <script src="https://kit.fontawesome.com/433de5932a.js" crossorigin="anonymous"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6B30R8M95"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-V6B30R8M95');
+        </script>
     </environment>
 
     @RenderSection("Scripts", required: false)
