@@ -33,7 +33,9 @@ namespace MyPortfolioSite.Controllers
         public IActionResult FatCatSplat()
         {
             ViewData["Message"] = "This is Fat Cat Splat.";
-            ViewData["Instructions"] = "Click the buttons to navigate through the UI. Use your Space Bar to jump!";
+            ViewData["Instructions"] = @"Click the buttons to navigate through the UI. Use your Space Bar to jump!<br />
+    <br />
+    &emsp;Direct Link to GitHub Repository:   <a href=""https://github.com/hashr25/Fat-Cat-Splat/"" target=""_blank"">Fat Cat Splat</a>";
             
 
             return View();
@@ -56,9 +58,26 @@ Controls:<br />
     &emsp;Zoom Map Out    -   =<br />
     &emsp;Crouch          -   C<br />
     &emsp;Walk            -   Left Shift<br />
-    &emsp;Jump            -   Space Bar";
+    &emsp;Jump            -   Space Bar<br />
+    <br />
+    &emsp;Direct Link to GitHub Repository:   <a href=""https://github.com/hashr25/Lost-In-A-Dungeon/"" target=""_blank"">Lost In A Dungeon</a>";
 
 
+            return View();
+        }
+
+        public IActionResult ThankYou()
+        {
+            return View();
+        }
+
+        public IActionResult ThanksForConsidering()
+        {
+            return View();
+        }
+
+        public IActionResult Donate()
+        {
             return View();
         }
 
